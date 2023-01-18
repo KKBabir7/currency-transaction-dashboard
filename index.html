@@ -1,0 +1,409 @@
+<html>
+    <head>
+			 <meta charset="utf-8">
+			 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+			 <meta name="viewport" content="width=device-width, initial-scale=1">
+			 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	    <title>
+	        dashboard
+	    </title>
+				<link rel="preconnect" href="https://fonts.gstatic.com">
+                <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+				<link rel="icon" href="img/calicon.png" type="image/png" sizes="16x16">
+				<link rel="stylesheet" href="css/bootstrap.min.css">
+				<link rel="stylesheet" href="css/bootstrap.css">
+				<link rel="stylesheet" href="css/style.css">
+				<link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+				<link rel="stylesheet" href="css/material-design-iconic-font.css">
+				<link rel="stylesheet" href="fonts/font-awesome.min.css">
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+				<link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Days+One" rel="stylesheet">
+			   <link href="@import url('https://fonts.googleapis.com/css?family=Patua+One');" rel="stylesheet">
+			   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">	
+			    <link rel="stylesheet" href="build/css/intlTelInput.css">
+                <link rel="stylesheet" href="build/css/demo.css">
+                <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+                
+	</head>
+
+    <body>
+<!---------------------navbar or header -->
+        <div class="nav-side-menu">
+            <div class="brand">
+			    <div class="logo">
+					<img  src="img/p.png" alt="...">	
+					   <h4>Pilgrim and Sons<br><p>Scott <span class='glyphicon glyphicon-menu-down'></span> </p></h4>
+				</div>
+		    </div>    
+            <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+            <div class="menu-list">
+            <ul id="menu-content" class="menu-content collapse">
+                <li data-toggle="collapse" data-target="#home" class="collapsed " aria-expanded="true">
+                  <a href="#"><div class="expand_caret caret"></div>  <i class="fa fa-registered"></i>  Home </a>
+                </li>
+                <ul class="sub-menu collapse in" id="home">
+                    <li><a href="#">Overview</a></li>
+                    <li  class="active"><a href="#">Accounts</a></li>
+                    <li><a href="#">Linked</a></li>
+                    <li><a href="#">Cards</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Merchant</a></li>   
+                </ul>
+                <li data-toggle="collapse" data-target="#payment" class="collapsed" aria-expanded="false">
+                  <a href="#"><div class="expand_caret caret"></div>  <i class="fa fa-exchange"></i> Payments </a>
+                </li>  
+                <ul class="sub-menu collapse" id="payment">
+                  <li><a href="#">New payments 1</a></li>
+                  <li><a href="#">New payments 2</a></li>
+                  <li><a href="#">New payments 3</a></li>
+                </ul>
+
+
+                <li data-toggle="collapse" data-target="#tool" class="collapsed" aria-expanded="false">
+                  <a href="#"><div class="expand_caret caret"></div>  <i class="fa fa-pencil-square"></i> Tools </a>
+                </li>
+                <ul class="sub-menu collapse" id="tool">
+                  <li><a href="#">New tool 1</a></li>
+                  <li><a href="#">New tool 2</a></li>
+                  <li><a href="#">New tool 3</a></li>
+                </ul>
+                <li>
+                  <a href="#">
+                      <i class="fa fa-gift"></i> Rewards
+                  </a>
+                </li>
+                <li data-toggle="collapse" data-target="#business" class="collapsed" aria-expanded="false">
+                  <a href="#"><div class="expand_caret caret"></div>   <i class="fa fa-suitcase"></i> Business </a>
+                </li>
+                <ul class="sub-menu collapse" id="business">
+                  <li><a href="#">New business 1</a></li>
+                  <li><a href="#">New business 2</a></li>
+                  <li><a href="#">New business 3</a></li>
+                </ul>
+				<li>
+                  <a href="#">
+                      <i class="fa fa-question-circle"></i> Get help
+                  </a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        <div class="container-fluid main-right-side">
+            <div class="row">
+				<div class="col-md-3 col-sm-4">
+				   
+				</div>
+				<div class="col-md-9 col-sm-8 right-side-shit">
+				    <div class="row balance-side">
+					    <div class="col-md-8 col-sm-8  col-xs-8 balance">
+						    <h1>$240,0.23</h1>
+							<p>All accounts balance in <span>GBP</span></p>
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-4 bell">
+						    <span class="glyphicon glyphicon-bell" aria-hidden="true"></span>
+						</div>
+					</div>
+					<div class="row balance-transfer">
+					    <div class="col-md-12">
+						    <div class="button-group">
+							    <button type="button" class="btn btn-default"><i class="fa fa-long-arrow-right"></i>  &nbsp;Send</button>
+							    <button type="button" class="btn btn-default"><i class="fa fa-calendar"></i> &nbsp;Schedule</button>
+								<button type="button" class="btn btn-default"><i class="fa fa-refresh"></i> &nbsp;Exchange</button>
+								<button type="button" class="btn btn-default"><i class="fa fa-plus"></i> &nbsp;Add money</button>
+							</div>
+						</div>
+					</div>
+					<div class="row a-t">
+					    <div class="col-md-12">
+						    <div class="tabbable-panel">
+				                <div class="tabbable-line">
+		                            <ul class="nav nav-tabs ul">
+							            <li  onclick="changea()" class="active"><a data-toggle="tab" href="#accountTab"> Account</a></li>
+							            <li onclick="changet()"><a data-toggle="tab" href="#transactionTab"> Transactions</a></li>
+		                            </ul>
+		                        
+		                        </div>
+		                    </div>
+							<div class="jumbotron ac-headding">
+								<div class="row">
+								    <div class="col-md-6 col-sm-7 col-xs-5">
+									<h4 id="headChange">All Accounts</h4>
+							        </div>
+									<div class="col-md-6 col-sm-5 col-xs-7">
+									    <ul>
+										   
+										    <li><span class="glyphicon glyphicon-th-large" aria-hidden="true"></span></li>
+										    <li><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></li>
+										    <li  class="search-form-tigger btn btn-success"  data-toggle="search-form"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></li>
+										    <li><span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span></li>
+										
+										</ul>
+							        </div>
+									
+							    </div>
+							</div>
+							
+						    <div class="search-form-wrapper fade in">
+							   <form class="search-form" id="" action="">
+								  <div class="input-group">
+									 <input style="border-right:none;" type="text" name="search" class="search form-control" placeholder="Search">
+									 <span style="border-right:none;border-left:none;" class="input-group-addon" id="basic-addon2"><i class="fa fa-search" aria-hidden="true"></i>
+									 </span>
+									 <span style="border-left:none;" class="input-group-addon search-close" id="basic-addon2"><i class="fa fa-times"></i>
+									 </span>
+								  </div>
+							   </form>
+                            </div>
+									
+							
+							<div class="tab-content" >
+                                <div id="accountTab" class="tab-pane fade in active">
+                                    <div class="row">
+	                                    <div class="col-md-6">
+										    <div class="jumbotron account-card">
+										    <div class="row">
+											    <div class="col-md-6 col-sm-7 col-xs-8 main">
+											        <p>Main</p>
+											        <p>GBP</p>
+													<br>
+													<h1>$132,230<span>.30</span></h1>
+											    </div>
+											    <div class="col-md-6 col-sm-5 col-xs-4 flag">
+											       <img  class="img-responsive img-circle" src="img/uk.png">
+											    </div>
+											
+										    </div>
+										    </div>
+										</div>
+										<div class="col-md-6">
+										    <div class="jumbotron account-card">
+										    <div class="row">
+											    <div class="col-md-6 col-sm-7 col-xs-8 main">
+											        <p>Pars Office</p>
+											        <p>EUR</p>
+													<br>
+													<h1>$13,000<span></span></h1>
+											    </div>
+											    <div class="col-md-6 col-sm-5 col-xs-4 flag">
+											       <img  class="img-responsive img-circle" src="img/eur.png">
+											    </div>
+										    </div>
+										    </div>
+										</div>
+										<div class="col-md-6">
+										    <div class="jumbotron account-card">
+										    <div class="row">
+											    <div class="col-md-6 col-sm-7 col-xs-8 main">
+											        <p>US Expansion</p>
+											        <p>USD</p>
+													<br>
+													<h1>$120,000<span></span></h1>
+											    </div>
+											    <div class="col-md-6 col-sm-5 col-xs-4 flag">
+											       <img  class="img-responsive img-circle" src="img/us.png">
+											    </div>
+										    </div>
+										    </div>
+										</div>
+										<div class="col-md-6">
+										    <div class="jumbotron account-card">
+										    <div class="row">
+											    <div class="col-md-6 col-sm-7 col-xs-8 main">
+											        <p>Zurich Office</p>
+											        <p>CHF</p>
+													<br>
+													<h1>Fr 1296,25<span></span></h1>
+											    </div>
+											    <div class="col-md-6 col-sm-5 col-xs-4 flag">
+											       <img  class="img-responsive img-circle" src="img/CH.png">
+											    </div>
+										    </div>
+										    </div>
+										</div>
+										
+										
+                                    </div>
+                                </div>
+								<div id="transactionTab" class="tab-pane fade main-currency">
+								    <div class="jumbotron jum-head">
+									<div class="row">
+									<div class="col-md-12">
+									    <p>Today</p>
+                  					</div>
+                  					</div>
+                  					</div>
+								    <div class="jumbotron c-c">
+									<div class="row ">
+									<div class="col-md-6 col-sm-6 col-xs-7 f-num">
+									   
+									   <div class="media">
+											<a href="#">
+												<div class="media-left">
+													<a href="#">
+														<img class="media-object btc-t" src="img/transfer/ltc.png" alt="...">
+													</a>
+												</div>
+												<div class="media-body">
+												   <h4 class="media-heading">Exchange from USD </h4>
+												   <span class="c-d">11290</span>
+												</div>
+											</a>
+										</div> 
+									</div>
+									<div class="col-md-6  col-sm-6 col-xs-5 c-num">
+										<div class="media">
+											<div class="media-body">
+											  <h4 class="media-heading">$18753.81 LTC</h4><br><br>
+											  <p class="numw">1783.33 USD</p>
+											</div>
+											
+										</div>
+									</div>
+				                    </div>
+				                    </div>
+								    <div class="jumbotron c-c">
+									<div class="row ">
+									<div class="col-md-6 col-sm-7 col-xs-7 f-num">
+									   
+									   <div class="media">
+											<a href="#">
+												<div class="media-left">
+													<a href="#">
+														<img class="media-object btc-t" src="img/transfer/usd.png" alt="...">
+													</a>
+												</div>
+												<div class="media-body">
+												   <h4 class="media-heading">Bank transfer to Soundcloud</h4>
+												   <span class="c-d">11290</span>
+												</div>
+											</a>
+										</div> 
+									</div>
+									<div class="col-md-6  col-sm-5 col-xs-5 c-num">
+										<div class="media">
+											<div class="media-body">
+											  <h4 class="media-heading">$18753.81 USD</h4><br><br>
+											  <p class="numw">1783.33 USD</p>
+											</div>
+											
+										</div>
+									</div>
+				                    </div>
+				                    </div>
+									<div class="jumbotron c-c">
+									<div class="row ">
+									<div class="col-md-6 col-sm-6 col-xs-7 f-num">
+									   
+									   <div class="media">
+											<a href="#">
+												<div class="media-left">
+													<a href="#">
+														<img class="media-object btc-t" src="img/transfer/btc.png" alt="...">
+													</a>
+												</div>
+												<div class="media-body">
+												   <h4 class="media-heading">From  RUKI</h4>
+												   <span class="c-d">11290</span>
+												</div>
+											</a>
+										</div> 
+									</div>
+									<div class="col-md-6  col-sm-6 col-xs-5 c-num">
+										<div class="media">
+											<div class="media-body">
+											  <h4 class="media-heading">$18753.81 BTC</h4><br><br>
+											  <p class="numw">1783.33 USD</p>
+											</div>
+											
+										</div>
+									</div>
+				                    </div>
+				                    </div>
+									 <div class="jumbotron jum-head" style="margin-top:15px;">
+									<div class="row">
+									<div class="col-md-12">
+									    <p>Yesterday</p>
+                  					</div>
+                  					</div>
+                  					</div>
+									<div class="jumbotron c-c">
+									<div class="row ">
+									<div class="col-md-6 col-sm-6 col-xs-7 f-num">
+									   
+									   <div class="media">
+											<a href="#">
+												<div class="media-left">
+													<a href="#">
+														<img class="media-object btc-t" src="img/transfer/eth.png" alt="...">
+													</a>
+												</div>
+												<div class="media-body">
+												   <h4 class="media-heading">Uber ride</h4>
+												   <span class="c-d">11290</span>
+												</div>
+											</a>
+										</div> 
+									</div>
+									<div class="col-md-6  col-sm-6 col-xs-5 c-num">
+										<div class="media">
+											<div class="media-body">
+											  <h4 class="media-heading">$18753.81 ETH</h4><br><br>
+											  <p class="numw">1783.33 USD</p>
+											</div>
+											
+										</div>
+									</div>
+				                    </div>
+				                    </div>
+									<div class="jumbotron c-c">
+									<div class="row ">
+									<div class="col-md-6 col-sm-6 col-xs-7 f-num">
+									   
+									   <div class="media">
+											<a href="#">
+												<div class="media-left">
+													<a href="#">
+														<img class="media-object btc-t" src="img/transfer/bch.png" alt="...">
+													</a>
+												</div>
+												<div class="media-body">
+												   <h4 class="media-heading">Starbucks</h4>
+												   <span class="c-d">11290</span>
+												</div>
+											</a>
+										</div> 
+									</div>
+									<div class="col-md-6  col-sm-6 col-xs-5 c-num">
+										<div class="media">
+											<div class="media-body">
+											  <h4 class="media-heading">$18753.81 BCH</h4><br><br>
+											  <p class="numw">1783.33 USD</p>
+											</div>
+											
+										</div>
+									</div>
+				                    </div>
+				                    </div>
+									
+								</div>
+                            </div>
+						</div>
+					</div>
+					
+				</div>
+	        </div>
+			<br><br><br>
+        </div>
+        <p class="message-box"><i class="fa fa-comments-o"></i></p>
+	    
+    </body>
+	<!--------------------all javascript file-->  
+           <script src="js/bootstrap.js"></script>
+		   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		   <script src="js/bootstrap.min.js"></script>
+		
+		   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		   <script src="js/extranal.js"></script>
+		  
+ </html>
